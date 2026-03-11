@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <Sts2Path>D:\Path\To\Slay the Spire 2</Sts2Path>
+    <Sts2DataDir>D:\Path\To\Slay the Spire 2\data_sts2_windows_x86_64</Sts2DataDir>
+    <GodotPath>D:\Path\To\Godot_console.exe</GodotPath>
+  </PropertyGroup>
+</Project>

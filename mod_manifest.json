@@ -1,0 +1,7 @@
+{
+  "pck_name": "St2ChangeYesAndNo",
+  "name": "St2ChangeYesAndNo",
+  "author": "lxh",
+  "description": "Keeps the confirm action on the left button for abandon run and exit/disconnect confirmation popups.",
+  "version": "v0.1.0"
+}
