@@ -20,7 +20,6 @@ Keeps the confirm action on the left button and the cancel action on the right b
 1. Put `St2ChangeYesAndNo.dll` and `St2ChangeYesAndNo.pck` into the game's `mods` folder.
 2. Launch the game.
 
-## Compatibility
+## Credits
 
-- This mod uses the standard Slay the Spire 2 `.dll + .pck` loading format.
-- No extra BaseLib dependency is required at the moment.
+Built on top of [ModTemplate-StS2](https://github.com/Alchyr/ModTemplate-StS2).

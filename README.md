@@ -22,7 +22,6 @@
 1. 将 `St2ChangeYesAndNo.dll` 和 `St2ChangeYesAndNo.pck` 放入游戏 `mods` 目录。
 2. 启动游戏。
 
-## 兼容性
+## 致谢
 
-- 本模组基于 Slay the Spire 2 的标准 `.dll + .pck` 方式加载。
-- 当前不需要额外安装 BaseLib。
+在[ModTemplate-StS2](https://github.com/Alchyr/ModTemplate-StS2)基础上开发。
