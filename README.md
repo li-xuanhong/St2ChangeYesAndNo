@@ -19,9 +19,9 @@
 
 ## 安装
 
-1. 将 `St2ChangeYesAndNo.dll` 和 `St2ChangeYesAndNo.pck` 放入游戏 `mods` 目录。
+1. 将 `St2ChangeYesAndNo.json`、`St2ChangeYesAndNo.dll` 和 `St2ChangeYesAndNo.pck` 放入游戏 `mods` 目录。
 2. 启动游戏。
 
 ## 致谢
 
-在[ModTemplate-StS2](https://github.com/Alchyr/ModTemplate-StS2)基础上开发。
+在 [ModTemplate-StS2](https://github.com/Alchyr/ModTemplate-StS2) 基础上开发。

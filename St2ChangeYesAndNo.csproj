@@ -7,6 +7,7 @@
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefaultItemExcludes>packages\**</DefaultItemExcludes>
+    <ModId>$(MSBuildProjectName)</ModId>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -64,14 +65,14 @@
 
   <ItemGroup>
     <None Include=".gitignore" />
-    <None Include="mod_manifest.json" />
+    <None Include="$(ModId).json" />
     <None Include="project.godot" />
     <None Include="St2ChangeYesAndNo\**" />
   </ItemGroup>
 
-  <Target Name="CopyToModsFolderOnBuild" AfterTargets="PostBuildEvent">
-    <Message Text="Copying .dll to mods folder." Importance="high" />
-    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(Sts2Path)/mods/" />
+  <Target Name="CopyModFilesToModsFolder" AfterTargets="Build;Publish" Condition="Exists('$(Sts2Path)/mods') and Exists('$(MSBuildProjectDirectory)/$(ModId).json')">
+    <Message Text="Copying mod DLL and manifest to mods folder." Importance="high" />
+    <Copy SourceFiles="$(TargetPath);$(MSBuildProjectDirectory)/$(ModId).json" DestinationFolder="$(Sts2Path)/mods/" SkipUnchangedFiles="true" />
   </Target>
 
   <Target Name="GodotPublish" AfterTargets="Publish" Condition="'$(GodotPath)' != '' and Exists('$(GodotPath)') and '$(IsInnerGodotExport)' != 'true'">

@@ -17,7 +17,7 @@ Keeps the confirm action on the left button and the cancel action on the right b
 
 ## Installation
 
-1. Put `St2ChangeYesAndNo.dll` and `St2ChangeYesAndNo.pck` into the game's `mods` folder.
+1. Put `St2ChangeYesAndNo.json`, `St2ChangeYesAndNo.dll`, and `St2ChangeYesAndNo.pck` into the game's `mods` folder.
 2. Launch the game.
 
 ## Credits
